@@ -39,7 +39,7 @@ body {
   height: 100vh;
 }
 
-@media (max-width: 925px) {
+@media (max-width: 1024px) {
   .layout {
     display: grid;
     grid-template-columns: 1fr;
