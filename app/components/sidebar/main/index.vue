@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-5">
     <p class="uppercase text-[#868C98] text-xs font-medium mb-2">Main</p>
     <div class="flex flex-col gap-y-1">
       <SidebarMainItem
