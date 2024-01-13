@@ -22,14 +22,14 @@
       </span>
     </div>
     <span class="ml-auto gap-x-6 lg:gap-x-3 flex">
-      <button>
+      <button type="button">
         <img
           class="h-6 lg:h-4"
           src="@/assets/svg/lupa.svg"
           alt="Imagem de uma lupa"
         />
       </button>
-      <button>
+      <button type="button">
         <img
           class="h-7 lg:h-5"
           src="@/assets/svg/notificacoes.svg"
@@ -61,7 +61,11 @@
         />Nova solicitacao
       </a>
     </div>
-    <button class="lg:hidden flex items-center" @click="handleMenuClick">
+    <button
+      type="button"
+      class="lg:hidden flex items-center"
+      @click="handleMenuClick"
+    >
       <img
         class="h-7"
         src="@/assets/svg/hamburger-menu.svg"
