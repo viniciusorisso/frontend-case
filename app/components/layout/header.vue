@@ -12,7 +12,7 @@
       </a>
       <span>
         <div>
-          <p class="font-semibold text-base md:text-xl md:block">
+          <p class="font-medium text-base md:text-xl md:block">
             Sophia Williams
           </p>
           <p class="md:block text-sm" style="color: #525866">
@@ -40,7 +40,7 @@
     <div class="gap-x-3 hidden lg:flex">
       <a
         href="#"
-        class="w-fit p-2 rounded-xl flex border gap-x-1 items-center font-semibold"
+        class="w-fit p-2 rounded-xl flex border gap-x-1 items-center font-medium"
         style="border-color: #e2e4e9; color: #525866"
       >
         <img
@@ -77,8 +77,8 @@
 
 <script setup>
 const handleMenuClick = ($event) => {
-  console.log('abriu')
-}
+  console.log("abriu");
+};
 </script>
 
 <style scoped>

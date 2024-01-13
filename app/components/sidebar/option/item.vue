@@ -3,7 +3,7 @@
     <span class="h-6 w-6 flex items-center justify-center">
       <slot name="image"></slot>
     </span>
-    <p class="text-sm font-semibold text-[#525866]">
+    <p class="text-sm font-medium text-[#525866]">
       {{ text }}
     </p>
   </button>

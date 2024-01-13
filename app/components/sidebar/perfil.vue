@@ -6,7 +6,7 @@
   >
     <img src="@/assets/svg/avatar.svg" alt="Imagem do Avatar" />
     <span class="flex flex-col gap-y-1 text-start">
-      <p class="text-sm font-semibold inline-block">
+      <p class="text-sm font-medium inline-block">
         Sophia Williams<img
           src="@/assets/svg/icone-verificado.svg"
           alt="Ícone de confirmado"
