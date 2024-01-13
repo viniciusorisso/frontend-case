@@ -1,5 +1,8 @@
 <template>
-  <nav class="sidebar hidden lg:flex" style="background-color: #e2e4e9">
+  <nav
+    class="sidebar hidden lg:flex flex-col bg-white border px-5"
+    style="border-color: #e2e4e9"
+  >
     <SidebarBrand />
     <SidebarDivider />
     <SidebarMain />
