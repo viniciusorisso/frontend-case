@@ -11,10 +11,7 @@
     <SidebarMain />
     <SidebarFavs />
     <div class="mt-auto flex flex-col items-start">
-      <span class="flex flex-col">
-        <button type="button">Configurações</button
-        ><button type="button">Suporte</button>
-      </span>
+      <SidebarConfigs />
       <SidebarDivider class="mt-5" style="border-color: #e2e4e9" />
       <SidebarPerfil />
     </div>
