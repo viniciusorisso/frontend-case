@@ -12,7 +12,7 @@
       </a>
       <span>
         <div>
-          <p class="font-semibold text-base md:text-xl md:block">
+          <p class="font-medium text-base md:text-xl md:block">
             Sophia Williams
           </p>
           <p class="md:block text-sm" style="color: #525866">
@@ -22,14 +22,14 @@
       </span>
     </div>
     <span class="ml-auto gap-x-6 lg:gap-x-3 flex">
-      <button>
+      <button type="button">
         <img
           class="h-6 lg:h-4"
           src="@/assets/svg/lupa.svg"
           alt="Imagem de uma lupa"
         />
       </button>
-      <button>
+      <button type="button">
         <img
           class="h-7 lg:h-5"
           src="@/assets/svg/notificacoes.svg"
@@ -40,7 +40,7 @@
     <div class="gap-x-3 hidden lg:flex">
       <a
         href="#"
-        class="w-fit p-2 rounded-xl flex border gap-x-1 items-center font-semibold"
+        class="w-fit p-2 rounded-xl flex border gap-x-1 items-center font-medium"
         style="border-color: #e2e4e9; color: #525866"
       >
         <img
@@ -61,7 +61,11 @@
         />Nova solicitacao
       </a>
     </div>
-    <button class="lg:hidden flex items-center" @click="handleMenuClick">
+    <button
+      type="button"
+      class="lg:hidden flex items-center"
+      @click="handleMenuClick"
+    >
       <img
         class="h-7"
         src="@/assets/svg/hamburger-menu.svg"
@@ -73,8 +77,8 @@
 
 <script setup>
 const handleMenuClick = ($event) => {
-  console.log('abriu')
-}
+  console.log("abriu");
+};
 </script>
 
 <style scoped>
