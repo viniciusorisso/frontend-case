@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white flex flex-col p-4 gap-y-3 md:gap-y-5">
+  <section class="bg-white flex flex-col p-4 gap-y-2 lg:gap-y-5 h-full">
     <div class="flex gap-x-2">
       <img src="@/assets/svg/feedback.svg" alt="" srcset="" />
       <p class="text-base font-medium">Feedback diário</p>
@@ -7,12 +7,12 @@
     <CommonDivider />
     <div class="flex flex-col items-center gap-2">
       <img
-        class="h-10 w-10"
+        class="h-8 w-8 lg:w-10 lg:h-10"
         src="@/assets/svg/usuario-feedback.svg"
         alt=""
         srcset=""
       />
-      <div class="flex flex-col gap-1 md:gap-3 text-center">
+      <div class="flex flex-col gap-1 lg:gap-3 text-center">
         <p class="text-sm md:text-base font-medium">
           Como você classificaria seu humor hoje?
         </p>
