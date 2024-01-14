@@ -11,7 +11,7 @@
 
 <script setup>
 const cardsList = [];
-const c0 = resolveComponent("DashboardCard");
+const c0 = resolveComponent("MainC1");
 const c1 = resolveComponent("DashboardCard");
 const c2 = resolveComponent("DashboardCard");
 const c3 = resolveComponent("DashboardCard");
