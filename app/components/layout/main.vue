@@ -4,21 +4,21 @@
       v-for="(card, index) in cardsList"
       :is="card"
       :style="{ 'grid-area': `c${index}` }"
-      class="card bg-red-400"
+      class="card"
     />
   </main>
 </template>
 
 <script setup>
-const cardsList = []
-const c0 = resolveComponent('DashboardCard')
-const c1 = resolveComponent('DashboardCard')
-const c2 = resolveComponent('DashboardCard')
-const c3 = resolveComponent('DashboardCard')
-const c4 = resolveComponent('DashboardCard')
-const c5 = resolveComponent('DashboardCard')
+const cardsList = [];
+const c0 = resolveComponent("DashboardCard");
+const c1 = resolveComponent("DashboardCard");
+const c2 = resolveComponent("DashboardCard");
+const c3 = resolveComponent("DashboardCard");
+const c4 = resolveComponent("DashboardCard");
+const c5 = resolveComponent("MainC5");
 
-cardsList.push(c0, c1, c2, c3, c4, c5)
+cardsList.push(c0, c1, c2, c3, c4, c5);
 </script>
 
 <style scoped>
@@ -30,10 +30,10 @@ cardsList.push(c0, c1, c2, c3, c4, c5)
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    'c0 c1 c2'
-    'c0 c3 c2'
-    'c4 c4 c5'
-    'c4 c4 c5';
+    "c0 c1 c2"
+    "c0 c3 c2"
+    "c4 c4 c5"
+    "c4 c4 c5";
   gap: 20px;
 }
 

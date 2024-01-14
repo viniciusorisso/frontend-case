@@ -14,11 +14,12 @@
     <p
       class="text-sm font-medium"
       :class="{ 'text-[#525866]': !active, 'text-[#0A0D14]': active }"
+      v-if="!isCollapsed"
     >
       {{ text }}
     </p>
     <img
-      v-if="active"
+      v-if="active && !isCollapsed"
       class="ml-auto my-auto"
       src="@/assets/svg/seta-direita.svg"
       alt="Ícone seta para a direita"
@@ -35,4 +36,6 @@ const { text, active } = defineProps<{
 const emit = defineEmits<{
   activate: [];
 }>();
+
+const { isCollapsed } = inject("collapse") as { isCollapsed: boolean };
 </script>

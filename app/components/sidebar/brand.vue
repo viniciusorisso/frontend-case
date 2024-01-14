@@ -5,16 +5,28 @@
     @click="handleClick"
   >
     <img src="@/assets/svg/jurisoft.svg" alt="Imagem da logo" />
-    <span class="flex flex-col gap-y-1 text-start">
+    <span v-if="!isCollapsed" class="flex flex-col gap-y-1 text-start">
       <p class="text-sm font-medium">Jurisoft</p>
       <p class="text-xs text-[#525866]">Marketing Jurídico</p>
     </span>
-    <img class="ml-auto" src="@/assets/svg/seta-baixo.svg" />
+    <img
+      v-if="!isCollapsed"
+      class="ml-auto"
+      src="@/assets/svg/seta-baixo.svg"
+    />
   </button>
 </template>
 
-<script setup>
-const handleClick = ($event) => {
-  console.log("clicou");
+<script lang="ts" setup>
+import { inject } from "vue";
+
+const emit = defineEmits<{
+  toggleCollapse: [];
+}>();
+
+const handleClick = ($event: Event) => {
+  emit("toggleCollapse");
 };
+
+const { isCollapsed } = inject("collapse") as { isCollapsed: boolean };
 </script>

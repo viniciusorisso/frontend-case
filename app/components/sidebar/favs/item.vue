@@ -6,14 +6,17 @@
   >
     <span
       class="w-2 h-2 rounded-full"
+      :class="{ 'my-2': isCollapsed }"
       :style="`background-color: ${ellipsisColor}`"
     ></span>
     <p
+      v-if="!isCollapsed"
       class="max-w-32 overflow-ellipsis text-[#525866] text-sm font-medium leading-5"
     >
       {{ text }}
     </p>
     <p
+      v-if="!isCollapsed"
       class="ml-auto text-sm text-[#868C98] px-2 py-1 border font-medium leading-5"
       style="border-color: #e2e4e9"
     >
@@ -32,4 +35,6 @@ const { index } = defineProps<{
 const emit = defineEmits<{
   clicked: [];
 }>();
+
+const { isCollapsed } = inject("collapse") as { isCollapsed: boolean };
 </script>

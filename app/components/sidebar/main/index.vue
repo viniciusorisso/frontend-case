@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-5">
+  <div class="mb-5" :class="{ 'flex flex-col items-center': isCollapsed }">
     <p class="uppercase text-[#868C98] text-xs font-medium mb-2">Main</p>
     <div class="flex flex-col gap-y-1">
       <SidebarMainItem
@@ -8,9 +8,7 @@
         :active="itemActive === index"
         @activate="changeItemActivated(index)"
       >
-        <template #image>
-          <img :src="image" />
-        </template>
+        <template #image> <img :src="image" /> </template>
       </SidebarMainItem>
     </div>
   </div>
@@ -67,4 +65,6 @@ const itemActive = ref(0);
 const changeItemActivated = (item: number): void => {
   itemActive.value = item;
 };
+
+const { isCollapsed } = inject("collapse") as { isCollapsed: boolean };
 </script>

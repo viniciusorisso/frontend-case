@@ -1,6 +1,6 @@
 <template>
   <template>
-    <div>
+    <div :class="{ 'flex flex-col items-center': isCollapsed }">
       <p class="uppercase text-[#868C98] text-xs font-medium mb-2">Favs</p>
       <div class="flex flex-col gap-y-1">
         <!-- Será apresentado no máximo 4 itens para não quebrar o layout proposto -->
@@ -36,4 +36,6 @@ const list = [
 const handleClick = (item: number): void => {
   console.log(`clicado: ${item}`);
 };
+
+const { isCollapsed } = inject("collapse") as { isCollapsed: boolean };
 </script>
