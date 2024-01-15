@@ -72,7 +72,7 @@ npm run preview
 
 ## 🚀 Deploy <a name = "deployment"></a>
 
-O projeto será feito o deploy na vercel com o [link]('#').
+O projeto será feito o deploy na vercel com o [link]('https://frontend-case-chi.vercel.app/').
 
 ## 🚀 TODO <a name = "todo"></a>
 
