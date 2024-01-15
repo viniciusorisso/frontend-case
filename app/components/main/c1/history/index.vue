@@ -1,11 +1,20 @@
 <template>
-  <div class="flex flex-col gap-y-3.5 overflow-hidden">
+  <div v-if="list.length > 0" class="flex flex-col gap-y-3.5 overflow-hidden">
     <p class="text-[#868C98] font-medium text-xs uppercase">
       Tarefas Anteriores
     </p>
     <div class="flex flex-col w-full gap-y-2.5 lg:gap-y-4">
       <MainC1HistoryItem v-for="item in list.slice(0, 3)" :item="item" />
     </div>
+  </div>
+  <div
+    class="flex flex-col justify-center items-center h-full p-3 gap-y-3"
+    v-else
+  >
+    <img class="h-16 w-16" src="@/assets/svg/sem-cronometros.svg" />
+    <p class="text-[#868C98] font-medium w-full text-center text-sm">
+      Sem registro de atividades
+    </p>
   </div>
 </template>
 

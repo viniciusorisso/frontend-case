@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full flex flex-col">
+  <div class="w-full flex flex-col">
     <div
       class="flex border rounded-t-xl overflow-hidden"
       style="border-color: #e2e4e9"
@@ -19,7 +19,7 @@
     </div>
     <textarea
       type="text"
-      class="p-3 h-full text-sm text-[#868C98] border rounded-b-xl overflow-hidden"
+      class="p-3 text-sm text-[#868C98] border rounded-b-xl overflow-hidden"
       style="border-color: #e2e4e9"
       placeholder="Adicionar comentário"
     ></textarea>
