@@ -11,30 +11,32 @@
 
 <script setup>
 useHead({
-  titleTemplate: "%s - Admin",
-  link: [
-    {
-      rel: "preconnect",
-      href: "https://fonts.googleapis.com",
-    },
-    {
-      rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=Roboto?display=swap",
-      crossorigin: "",
-    },
-  ],
+  titleTemplate: "Dashboard - Admin",
 });
 
 const sidebarCollapsed = ref(false);
+
+const width = ref(0);
 
 const setCollapse = () => {
   sidebarCollapsed.value = !sidebarCollapsed.value;
 };
 
 onMounted(() => {
-  const { width } = useWindowResize();
-  if (width.value < 1024 && width.value > 768) sidebarCollapsed.value = true;
+  width.value = window.innerWidth;
+  window.addEventListener("resize", handlerResize);
+  handlerResize();
 });
+
+onUnmounted(() => {
+  window.removeEventListener("resize");
+});
+
+const handlerResize = () => {
+  width.value = window.innerWidth;
+  if (width.value < 1284 && width.value > 768) sidebarCollapsed.value = true;
+  if (width.value > 1284) sidebarCollapsed.value = false;
+};
 </script>
 
 <style>

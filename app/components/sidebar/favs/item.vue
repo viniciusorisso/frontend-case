@@ -4,11 +4,7 @@
     class="flex gap-x-3 items-center py-2 px-3 w-34"
     @click="$emit('clicked')"
   >
-    <span
-      class="w-2 h-2 rounded-full"
-      :class="{ 'my-2': isCollapsed }"
-      :style="`background-color: ${ellipsisColor}`"
-    ></span>
+    <CommonColoredCircle :color="ellipsisColor" :isCollapsed="isCollapsed" />
     <p
       v-if="!isCollapsed"
       class="max-w-32 overflow-ellipsis text-[#525866] text-sm font-medium leading-5"

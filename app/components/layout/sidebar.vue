@@ -27,7 +27,7 @@ import { provide } from "vue";
 const props = defineProps<{
   sidebarCollapsed: boolean;
 }>();
-const { sidebarCollapsed } = toRefs(props);
+const sidebarCollapsed = toRef(props, "sidebarCollapsed");
 
 const emit = defineEmits<{
   toggleCollapse: [];
