@@ -3,13 +3,23 @@
     class="flex h-[160px] w-[160px] lg:h-[80px] lg:w-[80px] justify-center items-center relative"
     style="transform: rotateY(180deg)"
   >
-    <svg>
+    <svg class="hidden lg:block">
       <circle cx="35" cy="35" r="35"></circle>
       <circle
         :style="`stroke-dashoffset:${strokeOffset}px`"
         cx="35"
         cy="35"
         r="35"
+      ></circle>
+    </svg>
+    <svg class="bigger-svg lg:hidden">
+      <circle class="bigger" cx="75" cy="75" r="75"></circle>
+      <circle
+        class="bigger"
+        :style="`stroke-dashoffset:${strokeOffset}px`"
+        cx="75"
+        cy="75"
+        r="75"
       ></circle>
     </svg>
     <span
@@ -46,6 +56,13 @@ svg {
   transform: rotate(-90deg);
 }
 
+.bigger-svg {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  transform: rotate(-90deg);
+}
+
 circle {
   width: 5rem;
   height: 5rem;
@@ -65,5 +82,16 @@ circle:nth-child(1) {
 circle:nth-child(2) {
   stroke-dashoffset: 440px;
   stroke: #ff4a00;
+}
+
+.bigger {
+  width: 10rem;
+  height: 10rem;
+  fill: none;
+  stroke: black;
+  stroke-width: 7.5;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440px;
+  stroke-dashoffset: 440px;
 }
 </style>

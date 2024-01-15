@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bar rounded-sm"
+    class="h-full rounded-sm"
     :style="`width: calc(${currentPercent} * 1%); background-color: ${currentColor};`"
   ></div>
 </template>
@@ -22,9 +22,3 @@ const currentPercent = computed(() => {
   return isDisabled.value ? 33.3 : props.percent;
 });
 </script>
-
-<style scoped>
-.bar {
-  height: 100%;
-}
-</style>

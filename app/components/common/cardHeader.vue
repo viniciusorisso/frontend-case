@@ -1,5 +1,7 @@
 <template>
-  <div class="flex justify-between gap-x-1 gap-y-2 flex-wrap lg:flex-nowrap">
+  <div
+    class="flex h-max-10 justify-between gap-x-1 gap-y-2 flex-wrap lg:flex-nowrap"
+  >
     <span
       class="flex gap-x-2 justify-center items-center w-min-[70%] w-max-[100%]"
     >
@@ -10,12 +12,14 @@
     </span>
     <button
       v-if="buttonText && !disabled"
-      class="flex p-2 gap-x-2 justify-center items-center font-medium text-xs xl:text-sm text-[#525866] border rounded-lg"
+      class="flex p-2 gap-x-2 justify-center items-center border rounded-lg"
       style="border-color: #e2e4e9"
       @click="handleClick()"
     >
       <slot name="buttonIcon"></slot>
-      <p class="xl:block">{{ buttonText }}</p>
+      <p class="text-xs xl:text-sm text-[#525866] font-medium">
+        {{ buttonText }}
+      </p>
     </button>
   </div>
 </template>
