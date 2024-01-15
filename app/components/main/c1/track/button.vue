@@ -1,9 +1,6 @@
 <template>
   <button type="button" class="flex gap-x-2 gap-y-3" @click="handleClick()">
-    <img
-      :src="'../../../../../assets/svg/' + formatInfo.get(config)?.svg"
-      alt=""
-    />
+    <img :src="formatInfo.get(config)!.svg" alt="" />
     <p
       class="font-medium text-xs first-letter:uppercase"
       :style="`color: ${formatInfo.get(config)!.color}`"
@@ -14,6 +11,7 @@
 </template>
 
 <script lang="ts" setup>
+import { useAsset } from "~/composables/useAsset";
 import { CronState } from "./types";
 
 const props = defineProps<{
@@ -36,17 +34,17 @@ const formatInfo = new Map<string, TInfo>();
 
 formatInfo.set("iniciar", {
   color: "#FF4A00",
-  svg: "iniciar.svg",
+  svg: useAsset("seta-direita-preenchida"),
   text: "Iniciar",
 });
 formatInfo.set("pausar", {
   color: "#0A0D14",
-  svg: "pause.svg",
+  svg: useAsset("pause"),
   text: "Pausar",
 });
 formatInfo.set("parar", {
   color: "#DF1C41",
-  svg: "parar.svg",
+  svg: useAsset("parar"),
   text: "Parar",
 });
 

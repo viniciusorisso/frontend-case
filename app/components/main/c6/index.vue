@@ -1,11 +1,6 @@
 <template>
   <section class="bg-white flex flex-col p-4 gap-y-4 h-full">
-    <CommonCardHeader
-      title="Destaque colaboradores"
-      :disabled="disabled"
-      button-text="Enviar"
-      @clicked="() => (disabled = !disabled)"
-    >
+    <CommonCardHeader title="Destaque colaboradores" button-text="Enviar">
       <template #icon>
         <img src="@/assets/svg/estrela.svg" alt="" srcset="" />
       </template>

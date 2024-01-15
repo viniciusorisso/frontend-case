@@ -15,47 +15,39 @@
 </template>
 
 <script lang="ts" setup>
-const getImageUrl = (image: string) => {
-  // Só está sendo utilizado este modo para evitar utilizar libs e/ou pacotes externos
-  // Também desconsiderei utilizar a abordagem de colocar na pasta public e utilizar sem
-  // o trecho de código abaixos
-  const key = `../../../assets/svg/${image}.svg`;
-  const url = new URL(key, import.meta.url);
-
-  return url.href;
-};
+import { useAsset } from "~/composables/useAsset";
 
 const list = [
   {
-    image: getImageUrl("dashboard"),
+    image: useAsset("dashboard"),
     text: "Dashboard",
   },
   {
-    image: getImageUrl("calendario"),
+    image: useAsset("calendario"),
     text: "Calendário",
   },
   {
-    image: getImageUrl("descanso"),
+    image: useAsset("descanso"),
     text: "Descanso",
   },
   {
-    image: getImageUrl("projetos"),
+    image: useAsset("projetos"),
     text: "Projetos",
   },
   {
-    image: getImageUrl("times"),
+    image: useAsset("times"),
     text: "Times",
   },
   {
-    image: getImageUrl("integracoes"),
+    image: useAsset("integracoes"),
     text: "Integracoes",
   },
   {
-    image: getImageUrl("beneficios"),
+    image: useAsset("beneficios"),
     text: "Benefícios",
   },
   {
-    image: getImageUrl("documentos"),
+    image: useAsset("documentos"),
     text: "Documentos",
   },
 ];

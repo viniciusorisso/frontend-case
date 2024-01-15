@@ -12,7 +12,7 @@
         @set-current-time="setTime"
       />
     </span>
-    <div class="flex gap-x-1">
+    <div class="flex gap-x-3">
       <MainC1TrackButton
         :button-config="cronState"
         @handle-click="handleClick"

@@ -1,10 +1,10 @@
 <template>
-  <main class="bg-blue-200 main overflow-scroll">
+  <main class="bg-[#FFFFFF] main overflow-scroll">
     <component
       v-for="(card, index) in cardsList"
       :is="card"
       :style="{ 'grid-area': `c${index}` }"
-      class="card"
+      class="card border rounded-2xl"
     />
   </main>
 </template>
