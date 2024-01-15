@@ -40,7 +40,7 @@
     <div class="gap-x-3 hidden lg:flex">
       <a
         href="#"
-        class="w-fit p-2 rounded-xl flex border gap-x-1 items-center font-medium"
+        class="w-fit p-2.5 rounded-xl flex border gap-x-2 items-center font-medium text-sm"
         style="border-color: #e2e4e9; color: #525866"
       >
         <img
@@ -51,14 +51,14 @@
       </a>
       <a
         href="#"
-        class="w-fit p-2 rounded-xl flex border text-white text-sm items-center gap-x-1"
+        class="w-fit p-2.5 rounded-xl flex text-white text-sm items-center gap-x-2 font-medium"
         style="background-color: #ff4a00"
       >
         <img
-          class="h-5 w-5 block"
+          class="h-3 w-3 block"
           src="@/assets/svg/mais.svg"
           alt="Avatar do usuário"
-        />Nova solicitacao
+        />Nova solicitação
       </a>
     </div>
     <button
