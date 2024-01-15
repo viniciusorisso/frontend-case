@@ -1,6 +1,8 @@
 <template>
   <div class="flex justify-between gap-x-1 gap-y-2 flex-wrap lg:flex-nowrap">
-    <span class="flex gap-x-2 justify-center items-center">
+    <span
+      class="flex gap-x-2 justify-center items-center w-min-[70%] w-max-[100%]"
+    >
       <slot name="icon"></slot>
       <p class="font-medium text-sm xl:text-base text-[#0A0D14] leading-5">
         {{ title }}

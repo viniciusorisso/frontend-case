@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white flex flex-col p-4 gap-y-2 lg:gap-y-5 h-full">
     <CommonCardHeader
-      button-text="Detalhes"
+      button-text="Limpar"
       title="Feedback diário"
       @clicked="(value) => (feedbackActive = !feedbackActive)"
     >
@@ -34,7 +34,7 @@
       class="flex flex-col justify-center items-center gap-y-5 h-full"
       v-else
     >
-      <img src="@/assets/svg/sem-feedback.svg" alt="" />
+      <img class="h-[6rem]" src="@/assets/svg/sem-feedback.svg" alt="" />
       <p class="text-sm text-[#868C98] text-center">
         Sem registros de feedback ainda. Por favor, verifique mais tarde.
       </p>

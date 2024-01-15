@@ -4,7 +4,7 @@
       Tarefas Anteriores
     </p>
     <div class="flex flex-col w-full gap-y-2.5 lg:gap-y-4">
-      <MainC1HistoryItem v-for="item in list.slice(0, 3)" :item="item" />
+      <MainC1HistoryItem v-for="item in list.slice(0, 1)" :item="item" />
     </div>
   </div>
   <div
