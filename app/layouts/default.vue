@@ -11,18 +11,7 @@
 
 <script setup>
 useHead({
-  titleTemplate: "%s - Admin",
-  link: [
-    {
-      rel: "preconnect",
-      href: "https://fonts.googleapis.com",
-    },
-    {
-      rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=Roboto?display=swap",
-      crossorigin: "",
-    },
-  ],
+  titleTemplate: "Dashboard - Admin",
 });
 
 const sidebarCollapsed = ref(false);
