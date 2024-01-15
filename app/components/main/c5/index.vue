@@ -34,7 +34,7 @@
       class="flex flex-col justify-center items-center gap-y-5 h-full"
       v-else
     >
-      <slot name="iconButton"></slot>
+      <img src="@/assets/svg/sem-feedback.svg" alt="" />
       <p class="text-sm text-[#868C98] text-center">
         Sem registros de feedback ainda. Por favor, verifique mais tarde.
       </p>

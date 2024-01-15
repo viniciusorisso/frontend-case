@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-blue-200 main">
+  <main class="bg-blue-200 main overflow-scroll">
     <component
       v-for="(card, index) in cardsList"
       :is="card"
@@ -14,7 +14,7 @@ const cardsList = [];
 const c0 = resolveComponent("MainC1");
 const c1 = resolveComponent("MainC2");
 const c2 = resolveComponent("DashboardCard");
-const c3 = resolveComponent("DashboardCard");
+const c3 = resolveComponent("MainC3");
 const c4 = resolveComponent("DashboardCard");
 const c5 = resolveComponent("MainC5");
 

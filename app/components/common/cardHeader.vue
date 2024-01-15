@@ -7,13 +7,13 @@
       </p>
     </span>
     <button
-      v-if="buttonIcon || buttonText"
+      v-if="buttonText && !disabled"
       class="flex p-2 gap-x-2 justify-center items-center font-medium text-xs xl:text-sm text-[#525866] border rounded-lg"
       style="border-color: #e2e4e9"
       @click="handleClick()"
     >
       <slot name="buttonIcon"></slot>
-      <p class="lg:hidden xl:block">{{ buttonText }}</p>
+      <p class="xl:block">{{ buttonText }}</p>
     </button>
   </div>
 </template>
@@ -23,10 +23,10 @@ const emit = defineEmits<{
   clicked: [];
 }>();
 
-const { title, buttonIcon, buttonText } = defineProps<{
+const { title, buttonText } = defineProps<{
   title: string;
   buttonText?: string;
-  buttonIcon?: string;
+  disabled?: boolean;
 }>();
 
 const handleClick = () => {
