@@ -14,11 +14,11 @@
           alt=""
           srcset=""
         />
-        <div class="flex flex-col gap-0 lg:gap-2 text-center">
+        <div class="flex flex-col gap-0 lg:gap-2 text-center mb-4">
           <p class="text-xs 2xl:text-base font-medium">
             Como você classificaria seu humor hoje?
           </p>
-          <p class="text-[10px] 2xl:text-xs font-normal text-[#525866]">
+          <p class="text-xs 2xl:text-xs font-normal text-[#525866]">
             Compartilhe seu humor para nos ajudar a entender
           </p>
         </div>

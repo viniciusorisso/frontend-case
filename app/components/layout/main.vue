@@ -42,7 +42,7 @@ onMounted(async () => {
 <style scoped>
 .main {
   grid-area: main;
-  padding: 25px;
+  padding: 0 25px 25px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

@@ -1,6 +1,6 @@
 <template>
   <button
-    class="w-full rounded-lg border h-9 p-2 text-sm text-[#525866] font-medium"
+    class="w-full rounded-lg border h-9 p-2 text-sm text-[#525866] font-medium mt-4"
     type="button"
     @click="emit('clicked')"
   >
