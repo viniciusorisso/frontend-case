@@ -12,7 +12,7 @@
 <script setup>
 const cardsList = [];
 const c0 = resolveComponent("MainC1");
-const c1 = resolveComponent("DashboardCard");
+const c1 = resolveComponent("MainC2");
 const c2 = resolveComponent("DashboardCard");
 const c3 = resolveComponent("DashboardCard");
 const c4 = resolveComponent("DashboardCard");

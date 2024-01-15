@@ -1,17 +1,14 @@
 <template>
   <section class="bg-white flex flex-col p-4 gap-y-2 lg:gap-y-5 h-full">
-    <div class="flex gap-x-2">
-      <img src="@/assets/svg/feedback.svg" alt="" srcset="" />
-      <p class="text-base font-medium">Feedback diário</p>
-      <button
-        type="button"
-        class="h-6 w-6 rounded-full bg-[#FF4A00] flex justify-center items-center ml-auto"
-        v-if="!feedbackActive"
-        @click="feedbackActive = true"
-      >
-        <img class="h-4 w-4" src="@/assets/svg/mais.svg" />
-      </button>
-    </div>
+    <CommonCardHeader
+      button-text="Detalhes"
+      title="Feedback diário"
+      @clicked="(value) => (feedbackActive = !feedbackActive)"
+    >
+      <template #icon>
+        <img class="h-6 w-6" src="@/assets/svg/feedback.svg" alt="" srcset="" />
+      </template>
+    </CommonCardHeader>
     <CommonDivider />
     <div v-if="feedbackActive" class="h-full">
       <div class="flex flex-col items-center gap-2">
@@ -37,7 +34,7 @@
       class="flex flex-col justify-center items-center gap-y-5 h-full"
       v-else
     >
-      <img src="@/assets/svg/sem-feedback.svg" alt="" />
+      <slot name="iconButton"></slot>
       <p class="text-sm text-[#868C98] text-center">
         Sem registros de feedback ainda. Por favor, verifique mais tarde.
       </p>
