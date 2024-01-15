@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-2.5 gap-x-1.5">
+  <div class="flex h-2.5 gap-x-1.5 w-full">
     <MainC2GraphBar
       color="#F2AE40"
       :percent="percent1"

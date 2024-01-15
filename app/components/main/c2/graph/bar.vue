@@ -1,8 +1,7 @@
-import type { _3 } from '#tailwind-config/theme/borderSpacing';
 <template>
   <div
     class="bar rounded-sm"
-    :style="`width: calc(${currentPercent} * 3px); background-color: ${currentColor};`"
+    :style="`width: calc(${currentPercent} * 1%); background-color: ${currentColor};`"
   ></div>
 </template>
 

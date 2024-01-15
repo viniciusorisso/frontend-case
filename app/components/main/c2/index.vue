@@ -15,7 +15,7 @@
       </template>
     </CommonCardHeader>
     <CommonDivider />
-    <div class="flex flex-col gap-y-2">
+    <div class="flex flex-col gap-y-2 w-full">
       <MainC2Time :disabled="isDisabled" :hours="12" :minutes="27" />
       <MainC2Graph :disabled="isDisabled" />
       <MainC2GraphGuide :disabled="isDisabled" />

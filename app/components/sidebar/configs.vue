@@ -1,4 +1,3 @@
-import OptionMenu from './optionMenu.vue';
 <template>
   <span class="flex flex-col gap-y-3">
     <SidebarOptionItem text="Configurações">

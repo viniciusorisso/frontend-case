@@ -10,7 +10,7 @@
 const props = defineProps<{
   isCollapsed: boolean;
   color: string;
-  disabled: boolean;
+  disabled?: boolean;
 }>();
 
 const isCollapsed = toRef(props, "isCollapsed");
