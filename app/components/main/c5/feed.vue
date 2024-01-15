@@ -7,7 +7,7 @@
       <button
         type="button"
         v-for="(emoji, index) in list"
-        class="border-r p-4 w-full flex items-center justify-center"
+        class="border-r p-3 w-full flex items-center justify-center text-xs"
         style="border-color: #e2e4e9"
         :class="{
           'bg-[#F6F8FA]': index === currentEmoji,

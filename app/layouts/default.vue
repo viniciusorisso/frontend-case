@@ -14,7 +14,7 @@ useHead({
   titleTemplate: "Dashboard - Admin",
 });
 
-const sidebarCollapsed = ref(false);
+const sidebarCollapsed = ref(true);
 
 const width = ref(0);
 
